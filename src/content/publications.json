@@ -1,0 +1,34 @@
+[
+  {
+    "id": "project-overview",
+    "title": "Project Overview: Undertrial Prisoners & Continuous Legal Education",
+    "type": "Brochure",
+    "date": "2025-01",
+    "description": "Introductory overview of the project scope, objectives, and initiatives at NUSRL, Ranchi.",
+    "file": null
+  },
+  {
+    "id": "legal-aid-handbook",
+    "title": "Legal Aid & Undertrial Rights: A Primer",
+    "type": "Report",
+    "date": "2025-03",
+    "description": "Educational primer on free legal aid, undertrial detention, and procedural safeguards under Indian law.",
+    "file": null
+  },
+  {
+    "id": "cle-modules",
+    "title": "Continuous Legal Education Module Outline",
+    "type": "Report",
+    "date": "2025-04",
+    "description": "Outline of training modules on criminal procedure, bail, and legal aid for stakeholders.",
+    "file": null
+  },
+  {
+    "id": "research-brief",
+    "title": "Research Brief: Undertrial Population in Jharkhand",
+    "type": "Article",
+    "date": "2025-05",
+    "description": "Preliminary research brief on undertrial detention trends and legal aid challenges in the state.",
+    "file": null
+  }
+]

@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --nusrl-navy: #1e3a5f;
+  --nusrl-navy-dark: #152a45;
+  --nusrl-gold: #c9a227;
+  --nusrl-gold-light: #e8c84a;
+  --nusrl-cream: #f8f6f1;
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-nusrl-navy: var(--nusrl-navy);
+  --color-nusrl-navy-dark: var(--nusrl-navy-dark);
+  --color-nusrl-gold: var(--nusrl-gold);
+  --color-nusrl-gold-light: var(--nusrl-gold-light);
+  --color-nusrl-cream: var(--nusrl-cream);
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-merriweather);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+.section-padding {
+  @apply px-4 py-16 md:px-8 md:py-24 lg:px-12;
+}
+
+.section-title {
+  @apply font-serif text-3xl font-bold text-nusrl-navy md:text-4xl;
+}
+
+.section-subtitle {
+  @apply mt-3 max-w-3xl text-lg text-gray-600;
+}

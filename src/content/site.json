@@ -1,0 +1,112 @@
+{
+  "siteName": "Undertrial Prisoners & Continuous Legal Education",
+  "university": "National University of Study and Research in Law, Ranchi",
+  "universityShort": "NUSRL, Ranchi",
+  "universityUrl": "https://nusrlranchi.ac.in",
+  "projectsUrl": "https://nusrlranchi.ac.in/projects/",
+  "tagline": "Advancing access to justice through legal aid, continuous legal education, and prison outreach for undertrial prisoners in Jharkhand.",
+  "hero": {
+    "ctaPrimary": { "label": "Our Mission", "href": "#about" },
+    "ctaSecondary": { "label": "What We Do", "href": "#initiatives" }
+  },
+  "about": {
+    "title": "About the Project",
+    "intro": "In pursuance of the mandate under Article 39A of the Constitution of India, the National University of Study and Research in Law, Ranchi (NUSRL) has undertaken a dedicated project on Undertrial Prisoners and Continuous Legal Education.",
+    "journey": "The project provides information and updates on legal aid initiatives, consultation programmes, research work, continuous legal education programmes, prison outreach activities, publications, and related initiatives. It reflects the university's commitment to qualitative legal aid for persons in custody and to training stakeholders in the criminal justice system.",
+    "constitutional": "Equal justice and free legal aid are constitutional imperatives. This initiative seeks to strengthen access to justice for undertrial prisoners and to build capacity through continuous legal education among law students, advocates, and allied professionals."
+  },
+  "mission": {
+    "title": "Mission & Values",
+    "missionItems": [
+      "Provide information and updates on project activities and legal aid initiatives",
+      "Support consultation programmes linking academia, legal aid authorities, and prisons",
+      "Undertake and disseminate research on undertrial justice and legal education",
+      "Conduct continuous legal education for students, advocates, and stakeholders",
+      "Facilitate prison outreach and sensitisation on rights of undertrial prisoners",
+      "Publish reports and materials to strengthen legal aid practices in Jharkhand"
+    ],
+    "values": [
+      { "title": "Justice & Equity", "description": "Ensuring fair access to legal representation and procedural safeguards." },
+      { "title": "Compassionate Service", "description": "Addressing the needs of vulnerable undertrial prisoners with dignity." },
+      { "title": "Education & Learning", "description": "Building capacity through continuous legal education and clinical engagement." },
+      { "title": "Community Impact", "description": "Collaborating with legal aid institutions, prisons, and civil society." }
+    ]
+  },
+  "initiatives": [
+    {
+      "title": "Legal Aid Initiatives",
+      "description": "Coordinating with State Legal Services Authorities and legal aid clinics to extend support to undertrial prisoners facing economic and social barriers."
+    },
+    {
+      "title": "Consultation Programmes",
+      "description": "Organising consultations among judiciary, prosecution, defence, prison administration, and academia on undertrial justice and legal aid."
+    },
+    {
+      "title": "Continuous Legal Education",
+      "description": "Training programmes for law students, young advocates, and stakeholders on criminal procedure, bail, and prisoners' rights."
+    },
+    {
+      "title": "Prison Outreach",
+      "description": "Structured outreach to correctional institutions to assess legal needs and connect prisoners with legal aid and family support."
+    },
+    {
+      "title": "Research Work",
+      "description": "Empirical and doctrinal research on undertrial detention, legal aid delivery, and reform of criminal justice processes."
+    },
+    {
+      "title": "Awareness & Training",
+      "description": "Workshops and awareness sessions for stakeholders on constitutional rights, legal aid schemes, and procedural literacy."
+    },
+    {
+      "title": "Publications",
+      "description": "Reports, policy briefs, and educational materials documenting project outcomes and best practices."
+    },
+    {
+      "title": "Policy Engagement",
+      "description": "Sharing research findings with legal aid authorities and criminal justice institutions to inform practice and reform."
+    }
+  ],
+  "partners": [
+    { "name": "Jharkhand State Legal Services Authority", "type": "Government" },
+    { "name": "District Legal Services Authorities", "type": "Government" },
+    { "name": "Prison Administration, Jharkhand", "type": "Government" },
+    { "name": "Bar Associations & Legal Aid Advocates", "type": "Legal" },
+    { "name": "Civil Society & NGOs", "type": "Civil Society" },
+    { "name": "Academic & Research Institutions", "type": "Academic" }
+  ],
+  "team": [
+    {
+      "name": "Project Coordinator",
+      "role": "Faculty Coordinator",
+      "email": "undertrial-cle@nusrlranchi.ac.in",
+      "phone": "",
+      "bio": "Coordinates project activities, legal aid initiatives, and continuous legal education programmes at NUSRL, Ranchi."
+    },
+    {
+      "name": "Legal Aid Cell",
+      "role": "Student & Faculty Volunteers",
+      "email": "legalaid@nusrlranchi.ac.in",
+      "phone": "",
+      "bio": "Law students and faculty engaged in clinical legal education, prison outreach, and research under the project."
+    }
+  ],
+  "patrons": [
+    { "name": "Hon'ble Vice Chancellor", "role": "NUSRL, Ranchi", "note": "Patron of the project as directed by the university administration." }
+  ],
+  "contact": {
+    "phone": "0651-2900700",
+    "email": "undertrial-cle@nusrlranchi.ac.in",
+    "address": "National University of Study and Research in Law, Ranchi\nBIT Mesra Campus, Ranchi, Jharkhand 835217",
+    "hours": "Monday – Friday: 10:00 AM – 5:00 PM"
+  },
+  "nav": [
+    { "label": "Home", "href": "#home" },
+    { "label": "About", "href": "#about" },
+    { "label": "Initiatives", "href": "#initiatives" },
+    { "label": "Activities", "href": "#activities" },
+    { "label": "Publications", "href": "#publications" },
+    { "label": "Team", "href": "#team" },
+    { "label": "Partners", "href": "#partners" },
+    { "label": "Contact", "href": "#contact" }
+  ]
+}

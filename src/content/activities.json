@@ -1,0 +1,42 @@
+[
+  {
+    "id": "project-launch",
+    "title": "Project on Undertrial Prisoners & CLE Launched at NUSRL",
+    "date": "2025-01-15",
+    "category": "Project",
+    "summary": "NUSRL, Ranchi initiates a dedicated project to provide information and updates on legal aid, continuous legal education, and prison outreach for undertrial prisoners, as directed by the university administration.",
+    "venue": "NUSRL, Ranchi"
+  },
+  {
+    "id": "legal-aid-orientation",
+    "title": "Orientation on Legal Aid for Undertrial Prisoners",
+    "date": "2025-03-10",
+    "category": "Legal Aid",
+    "summary": "Orientation session for law students and faculty on the constitutional mandate of free legal aid under Article 39A and the role of legal services authorities in Jharkhand.",
+    "venue": "NUSRL, Ranchi"
+  },
+  {
+    "id": "cle-workshop",
+    "title": "Continuous Legal Education Workshop",
+    "date": "2025-04-22",
+    "category": "CLE",
+    "summary": "Workshop on criminal procedure, bail jurisprudence, and prisoners' rights for student volunteers and young advocates.",
+    "venue": "NUSRL, Ranchi"
+  },
+  {
+    "id": "prison-outreach",
+    "title": "Prison Outreach Programme",
+    "date": "2025-05-18",
+    "category": "Outreach",
+    "summary": "Structured outreach visit to assess legal aid needs and sensitise stakeholders on undertrial prisoners' rights. Conducted in coordination with legal services authorities.",
+    "venue": "Jharkhand"
+  },
+  {
+    "id": "consultation-programme",
+    "title": "Multi-Stakeholder Consultation on Undertrial Justice",
+    "date": "2025-06-05",
+    "category": "Consultation",
+    "summary": "Consultation bringing together academia, legal aid advocates, and criminal justice stakeholders to discuss challenges and opportunities in undertrial justice.",
+    "venue": "NUSRL, Ranchi"
+  }
+]
