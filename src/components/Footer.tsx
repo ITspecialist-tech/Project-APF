@@ -51,9 +51,12 @@ export function Footer({ site }: FooterProps) {
             </p>
           </div>
         </div>
-        <p className="mt-10 border-t border-white/10 pt-6 text-center text-sm text-gray-400">
-          © {year} {site.universityShort}. All rights reserved.
-        </p>
+        <div className="mt-10 border-t border-white/10 pt-6 text-center text-sm text-gray-400">
+          <p>© {year} {site.universityShort}. All rights reserved.</p>
+          <p className="mt-2 text-xs text-gray-500">
+            Developed by Pratap, with dedication and care.
+          </p>
+        </div>
       </div>
     </footer>
   );
