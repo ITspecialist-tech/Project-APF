@@ -5,17 +5,20 @@ import { ActivitiesSection } from "@/components/ActivitiesSection";
 import { PublicationsSection } from "@/components/PublicationsSection";
 import { TeamGrid } from "@/components/TeamGrid";
 import { PartnersGrid } from "@/components/PartnersGrid";
+import { GallerySection } from "@/components/GallerySection";
 import { ContactBlock } from "@/components/ContactBlock";
 import {
   getSiteContent,
   getLatestActivities,
   getPublications,
+  getGalleryItems,
 } from "@/lib/content";
 
 export default function HomePage() {
   const site = getSiteContent();
   const activities = getLatestActivities(3);
   const publications = getPublications();
+  const galleryItems = getGalleryItems();
 
   return (
     <>
@@ -26,6 +29,7 @@ export default function HomePage() {
       <PublicationsSection publications={publications} />
       <TeamGrid site={site} />
       <PartnersGrid site={site} />
+      <GallerySection items={galleryItems} />
       <ContactBlock site={site} />
     </>
   );

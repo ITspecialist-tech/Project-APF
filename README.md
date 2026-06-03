@@ -20,6 +20,8 @@ Open [http://localhost:3000](http://localhost:3000).
 | `src/content/site.json` | Main copy: about, mission, team, contact, initiatives |
 | `src/content/activities.json` | Activity and event entries |
 | `src/content/publications.json` | Publications list (set `file` to `/documents/your.pdf`) |
+| `src/content/gallery.json` | Event gallery entries (title, date, venue, image path) |
+| `public/admin/` | Decap CMS admin interface and configuration |
 | `source-materials/` | Raw email attachments (not deployed) |
 | `public/documents/` | PDFs served for download |
 | `public/images/` | Logos and photos |
@@ -49,6 +51,17 @@ Edit `src/content/activities.json`:
 ### Team and contact
 
 Update `src/content/site.json` — `team`, `patrons`, and `contact` sections.
+
+### Event gallery
+
+1. Upload photos to `public/images/uploads/`
+2. Edit `src/content/gallery.json` and set image paths like `/images/uploads/event-1.jpg`
+
+## CMS (content editor)
+
+- Open `/admin` on your deployed site (or `http://localhost:3000/admin` in development)
+- Login with your GitHub account (as configured in `public/admin/config.yml`)
+- Edit Site Content, Activities, Publications, and Event Gallery from the UI
 
 ## Deploy to Vercel
 

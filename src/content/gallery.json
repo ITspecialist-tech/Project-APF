@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": "consultation-roundtable",
+      "title": "Consultation Roundtable on Undertrial Justice",
+      "date": "2025-06-05",
+      "venue": "NUSRL, Ranchi",
+      "image": "",
+      "alt": "Consultation roundtable session"
+    },
+    {
+      "id": "cle-workshop-session",
+      "title": "Continuous Legal Education Workshop",
+      "date": "2025-04-22",
+      "venue": "NUSRL, Ranchi",
+      "image": "",
+      "alt": "CLE workshop session"
+    },
+    {
+      "id": "prison-outreach-visit",
+      "title": "Prison Outreach Visit",
+      "date": "2025-05-18",
+      "venue": "Jharkhand",
+      "image": "",
+      "alt": "Prison outreach programme visit"
+    }
+  ]
+}

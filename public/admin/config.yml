@@ -1,0 +1,74 @@
+backend:
+  name: github
+  repo: ITspecialist-tech/Project-APF
+  branch: master
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site"
+    label: "Site Content"
+    files:
+      - label: "Site Configuration"
+        name: "site_config"
+        file: "src/content/site.json"
+        format: "json"
+        fields:
+          - { label: "Site Name", name: "siteName", widget: "string" }
+          - { label: "University", name: "university", widget: "string" }
+          - { label: "University Short", name: "universityShort", widget: "string" }
+          - { label: "University URL", name: "universityUrl", widget: "string" }
+          - { label: "Projects URL", name: "projectsUrl", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "text" }
+
+  - name: "activities"
+    label: "Activities"
+    file: "src/content/activities.json"
+    format: "json"
+    fields:
+      - label: "Activities List"
+        name: "items"
+        widget: "list"
+        summary: "{{fields.title}}"
+        fields:
+          - { label: "ID", name: "id", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+          - { label: "Category", name: "category", widget: "string" }
+          - { label: "Summary", name: "summary", widget: "text" }
+          - { label: "Venue", name: "venue", widget: "string" }
+
+  - name: "publications"
+    label: "Publications"
+    file: "src/content/publications.json"
+    format: "json"
+    fields:
+      - label: "Publications List"
+        name: "items"
+        widget: "list"
+        summary: "{{fields.title}}"
+        fields:
+          - { label: "ID", name: "id", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Type", name: "type", widget: "string" }
+          - { label: "Date", name: "date", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "File Path", name: "file", widget: "string", required: false, hint: "e.g. /documents/report.pdf" }
+
+  - name: "gallery"
+    label: "Event Gallery"
+    file: "src/content/gallery.json"
+    format: "json"
+    fields:
+      - label: "Gallery Items"
+        name: "items"
+        widget: "list"
+        summary: "{{fields.title}}"
+        fields:
+          - { label: "ID", name: "id", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+          - { label: "Venue", name: "venue", widget: "string" }
+          - { label: "Image Path", name: "image", widget: "image", required: false }
+          - { label: "Alt Text", name: "alt", widget: "string" }

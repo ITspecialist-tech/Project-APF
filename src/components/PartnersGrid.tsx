@@ -8,7 +8,7 @@ export function PartnersGrid({ site }: PartnersGridProps) {
   return (
     <section id="partners" className="bg-white">
       <div className="mx-auto max-w-7xl section-padding">
-        <h2 className="section-title">Our Partners</h2>
+        <h2 className="section-title">Our Stakeholders</h2>
         <p className="section-subtitle">
           Building collaboration across government, legal, civil society, and academic institutions to strengthen
           access to justice.

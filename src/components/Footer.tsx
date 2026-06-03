@@ -39,6 +39,16 @@ export function Footer({ site }: FooterProps) {
                   Activities
                 </Link>
               </li>
+              <li>
+                <Link href="/gallery" className="hover:text-white">
+                  Event Gallery
+                </Link>
+              </li>
+              <li>
+                <a href="/admin" className="hover:text-white">
+                  CMS Admin
+                </a>
+              </li>
             </ul>
           </div>
           <div>

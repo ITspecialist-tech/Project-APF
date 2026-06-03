@@ -106,7 +106,8 @@
     { "label": "Activities", "href": "#activities" },
     { "label": "Publications", "href": "#publications" },
     { "label": "Team", "href": "#team" },
-    { "label": "Partners", "href": "#partners" },
+    { "label": "Stakeholders", "href": "#partners" },
+    { "label": "Gallery", "href": "#gallery" },
     { "label": "Contact", "href": "#contact" }
   ]
 }
