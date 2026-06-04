@@ -44,32 +44,53 @@ export async function GET() {
 </head>
 <body>
   <div id="cms-loading">Loading content manager…</div>
+  <div id="cms-error" style="display:none;max-width:520px;margin:2rem auto;padding:1rem;color:#b91c1c;font-family:system-ui,sans-serif;"></div>
   <script>window.CMS_MANUAL_INIT = true;</script>
-  <script src="https://unpkg.com/decap-cms@3.4.0/dist/decap-cms.js"></script>
+  <script src="https://unpkg.com/decap-cms@3.4.0/dist/decap-cms.js" onerror="document.getElementById('cms-loading').style.display='none';document.getElementById('cms-error').style.display='block';document.getElementById('cms-error').textContent='Could not load Decap CMS script. Check your internet connection and refresh.';"></script>
   <script>
     (function () {
       var cmsConfig = ${configJson};
 
+      function showError(msg) {
+        var loading = document.getElementById("cms-loading");
+        var err = document.getElementById("cms-error");
+        if (loading) loading.style.display = "none";
+        if (err) {
+          err.style.display = "block";
+          err.textContent = msg;
+        }
+      }
+
       function boot() {
         if (window.__NUSRL_CMS_READY__) return;
         if (!window.CMS) {
-          document.getElementById("cms-loading").textContent =
-            "Failed to load CMS. Please refresh the page.";
+          showError("Failed to load CMS. Please hard-refresh (Ctrl+Shift+R).");
           return;
         }
-        window.__NUSRL_CMS_READY__ = true;
-        var loading = document.getElementById("cms-loading");
-        if (loading) loading.remove();
-        window.CMS.init({
-          load_config_file: false,
-          config: cmsConfig
-        });
+        try {
+          window.__NUSRL_CMS_READY__ = true;
+          var loading = document.getElementById("cms-loading");
+          if (loading) loading.style.display = "none";
+          window.CMS.init({
+            load_config_file: false,
+            config: cmsConfig
+          });
+        } catch (e) {
+          showError("CMS failed to start: " + (e && e.message ? e.message : String(e)));
+        }
       }
+
+      setTimeout(function () {
+        if (!window.__NUSRL_CMS_READY__ && !window.CMS) {
+          showError("CMS script timed out. Please refresh the page.");
+        }
+      }, 15000);
 
       if (window.CMS) {
         boot();
       } else {
-        document.querySelector("script[src*='decap-cms']").addEventListener("load", boot);
+        var s = document.querySelector("script[src*='decap-cms']");
+        if (s) s.addEventListener("load", boot);
       }
     })();
   </script>
