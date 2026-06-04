@@ -39,9 +39,9 @@ export function PublicationsSection({ publications }: PublicationsSectionProps) 
               </div>
               <h3 className="mt-4 font-serif text-lg font-bold text-nusrl-navy">{pub.title}</h3>
               <p className="mt-2 text-sm text-gray-600">{pub.description}</p>
-              {pub.file ? (
+              {pub.pdfPath ? (
                 <a
-                  href={pub.file}
+                  href={pub.pdfPath}
                   className="mt-4 inline-flex text-sm font-semibold text-nusrl-navy hover:text-nusrl-gold"
                   download
                 >

@@ -2,17 +2,17 @@ backend:
   name: github
   repo: ITspecialist-tech/Project-APF
   branch: main
-  auth_type: implicit
+  # base_url + auth_endpoint are injected at runtime in /admin (required for Vercel)
 
 media_folder: "public/images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "site"
+  - name: "nusrl_site"
     label: "Site Content"
     files:
       - label: "Site Configuration"
-        name: "site_config"
+        name: "nusrl_site_settings"
         file: "src/content/site.json"
         format: "json"
         fields:
@@ -23,53 +23,62 @@ collections:
           - { label: "Projects URL", name: "projectsUrl", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "text" }
 
-  - name: "activities"
+  - name: "nusrl_activities"
     label: "Activities"
-    file: "src/content/activities.json"
-    format: "json"
-    fields:
+    files:
       - label: "Activities List"
-        name: "items"
-        widget: "list"
-        summary: "{{fields.title}}"
+        name: "nusrl_activity_list"
+        file: "src/content/activities.json"
+        format: "json"
         fields:
-          - { label: "ID", name: "id", widget: "string" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
-          - { label: "Category", name: "category", widget: "string" }
-          - { label: "Summary", name: "summary", widget: "text" }
-          - { label: "Venue", name: "venue", widget: "string" }
+          - label: "Activities"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - { label: "Venue", name: "venue", widget: "string" }
 
-  - name: "publications"
+  - name: "nusrl_publications"
     label: "Publications"
-    file: "src/content/publications.json"
-    format: "json"
-    fields:
+    files:
       - label: "Publications List"
-        name: "items"
-        widget: "list"
-        summary: "{{fields.title}}"
+        name: "nusrl_publication_list"
+        file: "src/content/publications.json"
+        format: "json"
         fields:
-          - { label: "ID", name: "id", widget: "string" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Type", name: "type", widget: "string" }
-          - { label: "Date", name: "date", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - { label: "File Path", name: "file", widget: "string", required: false, hint: "e.g. /documents/report.pdf" }
+          - label: "Publications"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Type", name: "type", widget: "string" }
+              - { label: "Date", name: "date", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "PDF Path", name: "pdfPath", widget: "string", required: false, hint: "e.g. /documents/report.pdf" }
 
-  - name: "gallery"
+  - name: "nusrl_gallery"
     label: "Event Gallery"
-    file: "src/content/gallery.json"
-    format: "json"
-    fields:
-      - label: "Gallery Items"
-        name: "items"
-        widget: "list"
-        summary: "{{fields.title}}"
+    files:
+      - label: "Gallery"
+        name: "nusrl_gallery_list"
+        file: "src/content/gallery.json"
+        format: "json"
         fields:
-          - { label: "ID", name: "id", widget: "string" }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
-          - { label: "Venue", name: "venue", widget: "string" }
-          - { label: "Image Path", name: "image", widget: "image", required: false }
-          - { label: "Alt Text", name: "alt", widget: "string" }
+          - label: "Gallery Items"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "ID", name: "id", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+              - { label: "Venue", name: "venue", widget: "string" }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Alt Text", name: "alt", widget: "string" }

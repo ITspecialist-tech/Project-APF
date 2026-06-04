@@ -29,9 +29,13 @@ vercel --prod
 
 Set `NEXT_PUBLIC_SITE_URL` in the Vercel project settings after the first deployment.
 
+## Custom domain (apf.nusrlranchi.ac.in)
+
+See **[CUSTOM_DOMAIN.md](./CUSTOM_DOMAIN.md)** for Vercel + DNS + CMS steps.
+
 ## Post-deploy
 
-- Share preview URL with NUSRL stakeholders.
+- Share **https://apf.nusrlranchi.ac.in** with NUSRL stakeholders.
 - Request listing on [nusrlranchi.ac.in/projects/](https://nusrlranchi.ac.in/projects/).
 - Replace placeholder content in `src/content/` with email attachment materials.
 - Upload PDFs to `public/documents/` and set `file` paths in `publications.json`.

@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://nusrl-undertrial-cle.vercel.app";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://apf.nusrlranchi.ac.in";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = ["", "/activities", "/publications", "/gallery"];

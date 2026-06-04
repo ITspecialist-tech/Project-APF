@@ -24,9 +24,9 @@ export function PublicationList({ publications }: PublicationListProps) {
               <h2 className="mt-3 font-serif text-xl font-bold text-nusrl-navy">{pub.title}</h2>
               <p className="mt-2 text-gray-600">{pub.description}</p>
             </div>
-            {pub.file ? (
-              <a
-                href={pub.file}
+              {pub.pdfPath ? (
+                <a
+                  href={pub.pdfPath}
                 className="shrink-0 rounded-lg bg-nusrl-navy px-4 py-2 text-sm font-semibold text-white hover:bg-nusrl-navy-dark"
                 download
               >
