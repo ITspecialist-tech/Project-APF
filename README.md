@@ -71,6 +71,10 @@ Update `src/content/site.json` — `team`, `patrons`, and `contact` sections.
 4. Add environment variable: `NEXT_PUBLIC_SITE_URL` = your Vercel URL (e.g. `https://nusrl-undertrial-cle.vercel.app`).
 5. Deploy. Enable automatic deploys on `main`.
 
+For the recommended NUSRL subdomain deployment at `https://apf.nusrlranchi.ac.in`,
+including the exact vendor DNS request and email draft, see
+[`DEPLOYMENT_SUBDOMAIN.md`](./DEPLOYMENT_SUBDOMAIN.md).
+
 ### Link from NUSRL main site
 
 After launch, request IT to add a card on [nusrlranchi.ac.in/projects/](https://nusrlranchi.ac.in/projects/) pointing to this site.
