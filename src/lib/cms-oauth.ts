@@ -17,24 +17,33 @@ export function buildCmsAuthSuccessPage(token: string): string {
 <script>
   (function () {
     var msg = ${safeMessage};
-    if (window.opener) {
-      var attempts = 0;
-      var timer = setInterval(function () {
-        attempts += 1;
-        window.opener.postMessage(msg, window.location.origin);
-        window.opener.postMessage(msg, "*");
+    var sent = false;
 
-        if (attempts >= 12) {
-          clearInterval(timer);
-          setTimeout(function () {
-            window.close();
-            document.body.textContent = "Login successful. You may close this window.";
-          }, 250);
-        }
-      }, 250);
-    } else {
-      document.body.textContent = "Login successful. You may close this window.";
+    function sendToken(origin) {
+      if (sent || !window.opener) return;
+      sent = true;
+      window.opener.postMessage(msg, origin || "*");
+      setTimeout(function () {
+        window.close();
+        document.body.textContent = "Login successful. You may close this window.";
+      }, 300);
     }
+
+    if (!window.opener) {
+      document.body.textContent = "Login successful. You may close this window.";
+      return;
+    }
+
+    window.addEventListener("message", function (event) {
+      if (event.data === "authorizing:github") {
+        sendToken(event.origin);
+      }
+    }, false);
+
+    window.opener.postMessage("authorizing:github", "*");
+    setTimeout(function () {
+      sendToken("*");
+    }, 3000);
   })();
 </script>
 </body>
@@ -52,16 +61,33 @@ export function buildCmsAuthErrorPage(error: string): string {
 <script>
   (function () {
     var err = ${safeError};
-    if (window.opener) {
-      var msg = "authorization:github:error:" + JSON.stringify({ error: err });
-      window.opener.postMessage(msg, window.location.origin);
-      window.opener.postMessage(msg, "*");
+    var msg = "authorization:github:error:" + JSON.stringify({ error: err });
+    var sent = false;
+
+    function sendError(origin) {
+      if (sent || !window.opener) return;
+      sent = true;
+      window.opener.postMessage(msg, origin || "*");
       setTimeout(function () {
         window.close();
-      }, 500);
-    } else {
-      document.body.textContent = "Login failed: " + err;
+      }, 300);
     }
+
+    if (!window.opener) {
+      document.body.textContent = "Login failed: " + err;
+      return;
+    }
+
+    window.addEventListener("message", function (event) {
+      if (event.data === "authorizing:github") {
+        sendError(event.origin);
+      }
+    }, false);
+
+    window.opener.postMessage("authorizing:github", "*");
+    setTimeout(function () {
+      sendError("*");
+    }, 3000);
   })();
 </script>
 </body>
