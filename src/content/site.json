@@ -1,71 +1,56 @@
 {
-  "siteName": "Undertrial Prisoners & Continuous Legal Education",
-  "university": "National University of Study and Research in Law, Ranchi",
-  "universityShort": "NUSRL, Ranchi",
+  "contact": {
+    "phone": "0651-000000",
+    "email": "undertrial-cle@nusrlranchi.ac.in",
+    "address": "National University of Study and Research in Law\nNagri, PO : Bukru, PS : Kanke Kanke Pithoria Road, Kanke Ranchi, Jharkhand – 834006",
+    "hours": "Monday – Friday: 10:00 AM – 5:00 PM"
+  },
   "universityUrl": "https://nusrlranchi.ac.in",
-  "projectsUrl": "https://nusrlranchi.ac.in/projects/",
-  "tagline": "Advancing access to justice through legal aid, continuous legal education, and prison outreach for undertrial prisoners in Jharkhand.",
-  "sections": {
-    "initiatives": {
-      "title": "What We Do",
-      "subtitle": "Our comprehensive approach addresses legal aid, education, outreach, and research for undertrial prisoners and stakeholders in the criminal justice system."
+  "nav": [
+    {
+      "label": "Home",
+      "href": "#home"
     },
-    "activities": {
-      "title": "Activities & Updates",
-      "subtitle": "Latest project activities, legal aid initiatives, consultations, and outreach programmes.",
-      "buttonLabel": "View all activities"
+    {
+      "label": "About",
+      "href": "#about"
     },
-    "publications": {
-      "title": "Publications",
-      "subtitle": "Reports, brochures, and research materials from the project.",
-      "buttonLabel": "View all publications"
+    {
+      "label": "Initiatives",
+      "href": "#initiatives"
     },
-    "team": {
-      "title": "Our Team",
-      "subtitle": "Faculty, coordinators, and student volunteers advancing the project at NUSRL, Ranchi."
+    {
+      "label": "Activities",
+      "href": "#activities"
     },
-    "partners": {
-      "title": "Our Stakeholders",
-      "subtitle": "Building collaboration across government, legal, civil society, and academic institutions to strengthen access to justice."
+    {
+      "label": "Publications",
+      "href": "#publications"
     },
-    "gallery": {
-      "title": "Event Gallery",
-      "subtitle": "Photos from consultations, legal aid initiatives, prison outreach, and continuous legal education activities.",
-      "buttonLabel": "View full gallery"
+    {
+      "label": "Team",
+      "href": "#team"
     },
-    "contact": {
-      "title": "Get in Touch",
-      "subtitle": "Reach out for information about the project, legal aid initiatives, continuous legal education programmes, or collaboration opportunities.",
-      "buttonLabel": "Send us an email"
+    {
+      "label": "Stakeholders",
+      "href": "#partners"
+    },
+    {
+      "label": "Gallery",
+      "href": "#gallery"
+    },
+    {
+      "label": "Contact",
+      "href": "#contact"
     }
-  },
-  "hero": {
-    "ctaPrimary": { "label": "Our Mission", "href": "#about" },
-    "ctaSecondary": { "label": "What We Do", "href": "#initiatives" }
-  },
-  "about": {
-    "title": "About the Project",
-    "intro": "In pursuance of the mandate under Article 39A of the Constitution of India, the National University of Study and Research in Law, Ranchi (NUSRL) has undertaken a dedicated project on Undertrial Prisoners and Continuous Legal Education.",
-    "journey": "The project provides information and updates on legal aid initiatives, consultation programmes, research work, continuous legal education programmes, prison outreach activities, publications, and related initiatives. It reflects the university's commitment to qualitative legal aid for persons in custody and to training stakeholders in the criminal justice system.",
-    "constitutional": "Equal justice and free legal aid are constitutional imperatives. This initiative seeks to strengthen access to justice for undertrial prisoners and to build capacity through continuous legal education among law students, advocates, and allied professionals."
-  },
-  "mission": {
-    "title": "Mission & Values",
-    "missionItems": [
-      "Provide information and updates on project activities and legal aid initiatives",
-      "Support consultation programmes linking academia, legal aid authorities, and prisons",
-      "Undertake and disseminate research on undertrial justice and legal education",
-      "Conduct continuous legal education for students, advocates, and stakeholders",
-      "Facilitate prison outreach and sensitisation on rights of undertrial prisoners",
-      "Publish reports and materials to strengthen legal aid practices in Jharkhand"
-    ],
-    "values": [
-      { "title": "Justice & Equity", "description": "Ensuring fair access to legal representation and procedural safeguards." },
-      { "title": "Compassionate Service", "description": "Addressing the needs of vulnerable undertrial prisoners with dignity." },
-      { "title": "Education & Learning", "description": "Building capacity through continuous legal education and clinical engagement." },
-      { "title": "Community Impact", "description": "Collaborating with legal aid institutions, prisons, and civil society." }
-    ]
-  },
+  ],
+  "patrons": [
+    {
+      "name": "Hon'ble Vice Chancellor",
+      "role": "NUSRL, Ranchi",
+      "note": "Patron of the project as directed by the university administration."
+    }
+  ],
   "initiatives": [
     {
       "title": "Legal Aid Initiatives",
@@ -101,13 +86,115 @@
     }
   ],
   "partners": [
-    { "name": "Jharkhand State Legal Services Authority", "type": "Government" },
-    { "name": "District Legal Services Authorities", "type": "Government" },
-    { "name": "Prison Administration, Jharkhand", "type": "Government" },
-    { "name": "Bar Associations & Legal Aid Advocates", "type": "Legal" },
-    { "name": "Civil Society & NGOs", "type": "Civil Society" },
-    { "name": "Academic & Research Institutions", "type": "Academic" }
+    {
+      "name": "Jharkhand State Legal Services Authority",
+      "type": "Government"
+    },
+    {
+      "name": "District Legal Services Authorities",
+      "type": "Government"
+    },
+    {
+      "name": "Prison Administration, Jharkhand",
+      "type": "Government"
+    },
+    {
+      "name": "Bar Associations & Legal Aid Advocates",
+      "type": "Legal"
+    },
+    {
+      "name": "Civil Society & NGOs",
+      "type": "Civil Society"
+    },
+    {
+      "name": "Academic & Research Institutions",
+      "type": "Academic"
+    }
   ],
+  "mission": {
+    "title": "Mission & Values",
+    "missionItems": [
+      "Provide information and updates on project activities and legal aid initiatives",
+      "Support consultation programmes linking academia, legal aid authorities, and prisons",
+      "Undertake and disseminate research on undertrial justice and legal education",
+      "Conduct continuous legal education for students, advocates, and stakeholders",
+      "Facilitate prison outreach and sensitisation on rights of undertrial prisoners",
+      "Publish reports and materials to strengthen legal aid practices in Jharkhand"
+    ],
+    "values": [
+      {
+        "title": "Justice & Equity",
+        "description": "Ensuring fair access to legal representation and procedural safeguards."
+      },
+      {
+        "title": "Compassionate Service",
+        "description": "Addressing the needs of vulnerable undertrial prisoners with dignity."
+      },
+      {
+        "title": "Education & Learning",
+        "description": "Building capacity through continuous legal education and clinical engagement."
+      },
+      {
+        "title": "Community Impact",
+        "description": "Collaborating with legal aid institutions, prisons, and civil society."
+      }
+    ]
+  },
+  "about": {
+    "title": "About the Project",
+    "intro": "In pursuance of the mandate under Article 39A of the Constitution of India, the National University of Study and Research in Law, Ranchi (NUSRL) has undertaken a dedicated project on Undertrial Prisoners and Continuous Legal Education.",
+    "journey": "The project provides information and updates on legal aid initiatives, consultation programmes, research work, continuous legal education programmes, prison outreach activities, publications, and related initiatives. It reflects the university's commitment to qualitative legal aid for persons in custody and to training stakeholders in the criminal justice system.",
+    "constitutional": "Equal justice and free legal aid are constitutional imperatives. This initiative seeks to strengthen access to justice for undertrial prisoners and to build capacity through continuous legal education among law students, advocates, and allied professionals."
+  },
+  "sections": {
+    "initiatives": {
+      "title": "What We Do",
+      "subtitle": "Our comprehensive approach addresses legal aid, education, outreach, and research for undertrial prisoners and stakeholders in the criminal justice system."
+    },
+    "activities": {
+      "title": "Activities & Updates",
+      "subtitle": "Latest project activities, legal aid initiatives, consultations, and outreach programmes.",
+      "buttonLabel": "View all activities"
+    },
+    "publications": {
+      "title": "Publications",
+      "subtitle": "Reports, brochures, and research materials from the project.",
+      "buttonLabel": "View all publications"
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Faculty, coordinators, and student volunteers advancing the project at NUSRL, Ranchi."
+    },
+    "partners": {
+      "title": "Our Stakeholders",
+      "subtitle": "Building collaboration across government, legal, civil society, and academic institutions to strengthen access to justice."
+    },
+    "gallery": {
+      "title": "Event Gallery",
+      "subtitle": "Photos from consultations, legal aid initiatives, prison outreach, and continuous legal education activities.",
+      "buttonLabel": "View full gallery"
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "subtitle": "Reach out for information about the project, legal aid initiatives, continuous legal education programmes, or collaboration opportunities.",
+      "buttonLabel": "Send us an email"
+    }
+  },
+  "tagline": "Advancing access to justice through legal aid, continuous legal education, and prison outreach for undertrial prisoners in Jharkhand.",
+  "universityShort": "NUSRL, Ranchi",
+  "university": "National University of Study and Research in Law, Ranchi",
+  "siteName": "Undertrial Prisoners & Continuous Legal Education",
+  "projectsUrl": "https://nusrlranchi.ac.in/projects/",
+  "hero": {
+    "ctaPrimary": {
+      "label": "Our Mission",
+      "href": "#about"
+    },
+    "ctaSecondary": {
+      "label": "What We Do",
+      "href": "#initiatives"
+    }
+  },
   "team": [
     {
       "name": "Project Coordinator",
@@ -123,25 +210,5 @@
       "phone": "",
       "bio": "Law students and faculty engaged in clinical legal education, prison outreach, and research under the project."
     }
-  ],
-  "patrons": [
-    { "name": "Hon'ble Vice Chancellor", "role": "NUSRL, Ranchi", "note": "Patron of the project as directed by the university administration." }
-  ],
-  "contact": {
-    "phone": "0651-2900700",
-    "email": "undertrial-cle@nusrlranchi.ac.in",
-    "address": "National University of Study and Research in Law, Ranchi\nBIT Mesra Campus, Ranchi, Jharkhand 835217",
-    "hours": "Monday – Friday: 10:00 AM – 5:00 PM"
-  },
-  "nav": [
-    { "label": "Home", "href": "#home" },
-    { "label": "About", "href": "#about" },
-    { "label": "Initiatives", "href": "#initiatives" },
-    { "label": "Activities", "href": "#activities" },
-    { "label": "Publications", "href": "#publications" },
-    { "label": "Team", "href": "#team" },
-    { "label": "Stakeholders", "href": "#partners" },
-    { "label": "Gallery", "href": "#gallery" },
-    { "label": "Contact", "href": "#contact" }
   ]
 }
