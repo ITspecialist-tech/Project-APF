@@ -22,6 +22,14 @@ collections:
           - { label: "University URL", name: "universityUrl", widget: "string" }
           - { label: "Projects URL", name: "projectsUrl", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "text" }
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Phone", name: "phone", widget: "string", required: false }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Address", name: "address", widget: "text" }
+              - { label: "Office Hours", name: "hours", widget: "string", required: false }
 
   - name: "nusrl_activities"
     label: "Activities"
