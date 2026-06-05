@@ -10,11 +10,8 @@ export function ServiceGrid({ site }: ServiceGridProps) {
   return (
     <section id="initiatives" className="bg-white">
       <div className="mx-auto max-w-7xl section-padding">
-        <h2 className="section-title">What We Do</h2>
-        <p className="section-subtitle">
-          Our comprehensive approach addresses legal aid, education, outreach, and research for undertrial
-          prisoners and stakeholders in the criminal justice system.
-        </p>
+        <h2 className="section-title">{site.sections.initiatives.title}</h2>
+        <p className="section-subtitle">{site.sections.initiatives.subtitle}</p>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {site.initiatives.map((item, i) => (
             <article

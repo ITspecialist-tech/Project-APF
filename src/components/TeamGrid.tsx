@@ -8,11 +8,8 @@ export function TeamGrid({ site }: TeamGridProps) {
   return (
     <section id="team" className="bg-nusrl-cream">
       <div className="mx-auto max-w-7xl section-padding">
-        <h2 className="section-title">Our Team</h2>
-        <p className="section-subtitle">
-          Faculty, coordinators, and student volunteers advancing the project at NUSRL, Ranchi. Update team
-          details from official project materials in <code className="rounded bg-white px-1 text-sm">src/content/site.json</code>.
-        </p>
+        <h2 className="section-title">{site.sections.team.title}</h2>
+        <p className="section-subtitle">{site.sections.team.subtitle}</p>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {site.team.map((member) => (
             <article

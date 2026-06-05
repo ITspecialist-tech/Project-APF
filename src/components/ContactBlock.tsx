@@ -6,15 +6,13 @@ type ContactBlockProps = {
 
 export function ContactBlock({ site }: ContactBlockProps) {
   const { contact } = site;
+  const section = site.sections.contact;
 
   return (
     <section id="contact" className="bg-nusrl-navy text-white">
       <div className="mx-auto max-w-7xl section-padding">
-        <h2 className="font-serif text-3xl font-bold md:text-4xl">Get in Touch</h2>
-        <p className="mt-3 max-w-2xl text-gray-300">
-          Reach out for information about the project, legal aid initiatives, continuous legal education
-          programmes, or collaboration opportunities.
-        </p>
+        <h2 className="font-serif text-3xl font-bold md:text-4xl">{section.title}</h2>
+        <p className="mt-3 max-w-2xl text-gray-300">{section.subtitle}</p>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div className="rounded-xl bg-white/10 p-6">
             <h3 className="font-semibold text-nusrl-gold">Email</h3>
@@ -44,7 +42,7 @@ export function ContactBlock({ site }: ContactBlockProps) {
             href={`mailto:${contact.email}?subject=Enquiry%20-%20Undertrial%20Prisoners%20%26%20CLE%20Project`}
             className="inline-flex rounded-lg bg-nusrl-gold px-6 py-3 font-semibold text-nusrl-navy-dark transition hover:bg-nusrl-gold-light"
           >
-            Send us an email
+            {section.buttonLabel}
           </a>
         </div>
       </div>

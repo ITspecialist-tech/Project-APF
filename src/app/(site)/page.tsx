@@ -25,11 +25,11 @@ export default function HomePage() {
       <Hero site={site} />
       <AboutSection site={site} />
       <ServiceGrid site={site} />
-      <ActivitiesSection activities={activities} />
-      <PublicationsSection publications={publications} />
+      <ActivitiesSection activities={activities} site={site} />
+      <PublicationsSection publications={publications} site={site} />
       <TeamGrid site={site} />
       <PartnersGrid site={site} />
-      <GallerySection items={galleryItems} />
+      <GallerySection items={galleryItems} site={site} />
       <ContactBlock site={site} />
     </>
   );

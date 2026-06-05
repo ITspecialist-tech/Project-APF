@@ -1,28 +1,27 @@
 import Link from "next/link";
-import type { Publication } from "@/lib/content";
+import type { Publication, SiteContent } from "@/lib/content";
 
 type PublicationsSectionProps = {
   publications: Publication[];
+  site: SiteContent;
 };
 
-export function PublicationsSection({ publications }: PublicationsSectionProps) {
+export function PublicationsSection({ publications, site }: PublicationsSectionProps) {
+  const section = site.sections.publications;
+
   return (
     <section id="publications" className="bg-white">
       <div className="mx-auto max-w-7xl section-padding">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <h2 className="section-title">Publications</h2>
-            <p className="section-subtitle">
-              Reports, brochures, and research materials from the project. Add PDFs to{" "}
-              <code className="rounded bg-gray-100 px-1 text-sm">public/documents/</code> and update content
-              files.
-            </p>
+            <h2 className="section-title">{section.title}</h2>
+            <p className="section-subtitle">{section.subtitle}</p>
           </div>
           <Link
             href="/publications"
             className="rounded-lg border border-nusrl-navy px-4 py-2 text-sm font-semibold text-nusrl-navy transition hover:bg-nusrl-navy hover:text-white"
           >
-            View all publications
+            {section.buttonLabel}
           </Link>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2">

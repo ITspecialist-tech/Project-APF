@@ -22,6 +22,143 @@ collections:
           - { label: "University URL", name: "universityUrl", widget: "string" }
           - { label: "Projects URL", name: "projectsUrl", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "text" }
+          - label: "Homepage Section Text"
+            name: "sections"
+            widget: "object"
+            fields:
+              - label: "Initiatives Section"
+                name: "initiatives"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "text" }
+              - label: "Activities Section"
+                name: "activities"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "text" }
+                  - { label: "Button Label", name: "buttonLabel", widget: "string" }
+              - label: "Publications Section"
+                name: "publications"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "text" }
+                  - { label: "Button Label", name: "buttonLabel", widget: "string" }
+              - label: "Team Section"
+                name: "team"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "text" }
+              - label: "Stakeholders Section"
+                name: "partners"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "text" }
+              - label: "Gallery Section"
+                name: "gallery"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "text" }
+                  - { label: "Button Label", name: "buttonLabel", widget: "string" }
+              - label: "Contact Section"
+                name: "contact"
+                widget: "object"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Subtitle", name: "subtitle", widget: "text" }
+                  - { label: "Button Label", name: "buttonLabel", widget: "string" }
+          - label: "Hero Buttons"
+            name: "hero"
+            widget: "object"
+            fields:
+              - label: "Primary Button"
+                name: "ctaPrimary"
+                widget: "object"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "href", widget: "string", hint: "Use a section link such as #about or a full URL." }
+              - label: "Secondary Button"
+                name: "ctaSecondary"
+                widget: "object"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Link", name: "href", widget: "string", hint: "Use a section link such as #initiatives or a full URL." }
+          - label: "About Section"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "text" }
+              - { label: "Journey Text", name: "journey", widget: "text" }
+              - { label: "Constitutional Text", name: "constitutional", widget: "text" }
+          - label: "Mission and Values"
+            name: "mission"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Mission Items"
+                name: "missionItems"
+                widget: "list"
+                field: { label: "Mission Item", name: "item", widget: "string" }
+              - label: "Values"
+                name: "values"
+                widget: "list"
+                summary: "{{fields.title}}"
+                fields:
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+          - label: "Initiatives"
+            name: "initiatives"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+          - label: "Stakeholders / Partners"
+            name: "partners"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Type", name: "type", widget: "string" }
+          - label: "Team"
+            name: "team"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Email", name: "email", widget: "string", required: false }
+              - { label: "Phone", name: "phone", widget: "string", required: false }
+              - { label: "Bio", name: "bio", widget: "text" }
+          - label: "Patrons"
+            name: "patrons"
+            widget: "list"
+            summary: "{{fields.name}}"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Note", name: "note", widget: "text", required: false }
+          - label: "Contact"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Phone", name: "phone", widget: "string", required: false }
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Address", name: "address", widget: "text" }
+              - { label: "Office Hours", name: "hours", widget: "string", required: false }
+          - label: "Navigation"
+            name: "nav"
+            widget: "list"
+            summary: "{{fields.label}}"
+            fields:
+              - { label: "Label", name: "label", widget: "string" }
+              - { label: "Link", name: "href", widget: "string", hint: "Use a section link such as #contact or a page link such as /activities." }
 
   - name: "nusrl_activities"
     label: "Activities"
