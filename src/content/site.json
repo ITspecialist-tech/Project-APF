@@ -5,6 +5,40 @@
   "universityUrl": "https://nusrlranchi.ac.in",
   "projectsUrl": "https://nusrlranchi.ac.in/projects/",
   "tagline": "Advancing access to justice through legal aid, continuous legal education, and prison outreach for undertrial prisoners in Jharkhand.",
+  "sections": {
+    "initiatives": {
+      "title": "What We Do",
+      "subtitle": "Our comprehensive approach addresses legal aid, education, outreach, and research for undertrial prisoners and stakeholders in the criminal justice system."
+    },
+    "activities": {
+      "title": "Activities & Updates",
+      "subtitle": "Latest project activities, legal aid initiatives, consultations, and outreach programmes.",
+      "buttonLabel": "View all activities"
+    },
+    "publications": {
+      "title": "Publications",
+      "subtitle": "Reports, brochures, and research materials from the project.",
+      "buttonLabel": "View all publications"
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "Faculty, coordinators, and student volunteers advancing the project at NUSRL, Ranchi."
+    },
+    "partners": {
+      "title": "Our Stakeholders",
+      "subtitle": "Building collaboration across government, legal, civil society, and academic institutions to strengthen access to justice."
+    },
+    "gallery": {
+      "title": "Event Gallery",
+      "subtitle": "Photos from consultations, legal aid initiatives, prison outreach, and continuous legal education activities.",
+      "buttonLabel": "View full gallery"
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "subtitle": "Reach out for information about the project, legal aid initiatives, continuous legal education programmes, or collaboration opportunities.",
+      "buttonLabel": "Send us an email"
+    }
+  },
   "hero": {
     "ctaPrimary": { "label": "Our Mission", "href": "#about" },
     "ctaSecondary": { "label": "What We Do", "href": "#initiatives" }

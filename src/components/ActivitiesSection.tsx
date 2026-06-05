@@ -1,8 +1,9 @@
 import Link from "next/link";
-import type { Activity } from "@/lib/content";
+import type { Activity, SiteContent } from "@/lib/content";
 
 type ActivitiesSectionProps = {
   activities: Activity[];
+  site: SiteContent;
 };
 
 function formatDate(dateStr: string) {
@@ -13,22 +14,22 @@ function formatDate(dateStr: string) {
   });
 }
 
-export function ActivitiesSection({ activities }: ActivitiesSectionProps) {
+export function ActivitiesSection({ activities, site }: ActivitiesSectionProps) {
+  const section = site.sections.activities;
+
   return (
     <section id="activities" className="bg-nusrl-cream">
       <div className="mx-auto max-w-7xl section-padding">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <h2 className="section-title">Activities &amp; Updates</h2>
-            <p className="section-subtitle">
-              Latest project activities, legal aid initiatives, consultations, and outreach programmes.
-            </p>
+            <h2 className="section-title">{section.title}</h2>
+            <p className="section-subtitle">{section.subtitle}</p>
           </div>
           <Link
             href="/activities"
             className="rounded-lg border border-nusrl-navy px-4 py-2 text-sm font-semibold text-nusrl-navy transition hover:bg-nusrl-navy hover:text-white"
           >
-            View all activities
+            {section.buttonLabel}
           </Link>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">

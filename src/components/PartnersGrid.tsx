@@ -8,11 +8,8 @@ export function PartnersGrid({ site }: PartnersGridProps) {
   return (
     <section id="partners" className="bg-white">
       <div className="mx-auto max-w-7xl section-padding">
-        <h2 className="section-title">Our Stakeholders</h2>
-        <p className="section-subtitle">
-          Building collaboration across government, legal, civil society, and academic institutions to strengthen
-          access to justice.
-        </p>
+        <h2 className="section-title">{site.sections.partners.title}</h2>
+        <p className="section-subtitle">{site.sections.partners.subtitle}</p>
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {site.partners.map((partner) => (
             <div

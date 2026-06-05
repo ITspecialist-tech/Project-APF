@@ -1,8 +1,9 @@
 import Link from "next/link";
-import type { GalleryItem } from "@/lib/content";
+import type { GalleryItem, SiteContent } from "@/lib/content";
 
 type GallerySectionProps = {
   items: GalleryItem[];
+  site: SiteContent;
 };
 
 function formatDate(dateStr: string) {
@@ -13,23 +14,22 @@ function formatDate(dateStr: string) {
   });
 }
 
-export function GallerySection({ items }: GallerySectionProps) {
+export function GallerySection({ items, site }: GallerySectionProps) {
+  const section = site.sections.gallery;
+
   return (
     <section id="gallery" className="bg-white">
       <div className="mx-auto max-w-7xl section-padding">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <h2 className="section-title">Event Gallery</h2>
-            <p className="section-subtitle">
-              Photos from consultations, legal aid initiatives, prison outreach, and continuous legal
-              education activities.
-            </p>
+            <h2 className="section-title">{section.title}</h2>
+            <p className="section-subtitle">{section.subtitle}</p>
           </div>
           <Link
             href="/gallery"
             className="rounded-lg border border-nusrl-navy px-4 py-2 text-sm font-semibold text-nusrl-navy transition hover:bg-nusrl-navy hover:text-white"
           >
-            View full gallery
+            {section.buttonLabel}
           </Link>
         </div>
 
