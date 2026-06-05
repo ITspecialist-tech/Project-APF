@@ -18,23 +18,20 @@ export function buildCmsAuthSuccessPage(token: string): string {
   (function () {
     var msg = ${safeMessage};
     if (window.opener) {
-      var openerOrigin = window.location.origin;
-      try {
-        if (document.referrer) {
-          openerOrigin = new URL(document.referrer).origin;
-        }
-      } catch (e) {}
-
       var attempts = 0;
       var timer = setInterval(function () {
         attempts += 1;
-        window.opener.postMessage(msg, openerOrigin);
-        if (attempts >= 10) {
+        window.opener.postMessage(msg, window.location.origin);
+        window.opener.postMessage(msg, "*");
+
+        if (attempts >= 12) {
           clearInterval(timer);
-          window.close();
-          document.body.textContent = "Login successful. You may close this window.";
+          setTimeout(function () {
+            window.close();
+            document.body.textContent = "Login successful. You may close this window.";
+          }, 250);
         }
-      }, 200);
+      }, 250);
     } else {
       document.body.textContent = "Login successful. You may close this window.";
     }
@@ -56,15 +53,9 @@ export function buildCmsAuthErrorPage(error: string): string {
   (function () {
     var err = ${safeError};
     if (window.opener) {
-      var openerOrigin = window.location.origin;
-      try {
-        if (document.referrer) {
-          openerOrigin = new URL(document.referrer).origin;
-        }
-      } catch (e) {}
-
       var msg = "authorization:github:error:" + JSON.stringify({ error: err });
-      window.opener.postMessage(msg, openerOrigin);
+      window.opener.postMessage(msg, window.location.origin);
+      window.opener.postMessage(msg, "*");
       setTimeout(function () {
         window.close();
       }, 500);
