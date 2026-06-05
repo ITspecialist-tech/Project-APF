@@ -13,12 +13,28 @@ export function buildCmsAuthSuccessPage(token: string): string {
 <html lang="en">
 <head><meta charset="utf-8" /><title>CMS Login</title></head>
 <body>
+<p>Login successful. Returning to the CMS…</p>
 <script>
   (function () {
     var msg = ${safeMessage};
     if (window.opener) {
-      window.opener.postMessage(msg, window.location.origin);
-      window.close();
+      var openerOrigin = window.location.origin;
+      try {
+        if (document.referrer) {
+          openerOrigin = new URL(document.referrer).origin;
+        }
+      } catch (e) {}
+
+      var attempts = 0;
+      var timer = setInterval(function () {
+        attempts += 1;
+        window.opener.postMessage(msg, openerOrigin);
+        if (attempts >= 10) {
+          clearInterval(timer);
+          window.close();
+          document.body.textContent = "Login successful. You may close this window.";
+        }
+      }, 200);
     } else {
       document.body.textContent = "Login successful. You may close this window.";
     }
@@ -35,12 +51,23 @@ export function buildCmsAuthErrorPage(error: string): string {
 <html lang="en">
 <head><meta charset="utf-8" /><title>CMS Login Error</title></head>
 <body>
+<p>Login failed. Returning to the CMS…</p>
 <script>
   (function () {
     var err = ${safeError};
     if (window.opener) {
-      window.opener.postMessage("authorization:github:error:" + JSON.stringify({ error: err }), window.location.origin);
-      window.close();
+      var openerOrigin = window.location.origin;
+      try {
+        if (document.referrer) {
+          openerOrigin = new URL(document.referrer).origin;
+        }
+      } catch (e) {}
+
+      var msg = "authorization:github:error:" + JSON.stringify({ error: err });
+      window.opener.postMessage(msg, openerOrigin);
+      setTimeout(function () {
+        window.close();
+      }, 500);
     } else {
       document.body.textContent = "Login failed: " + err;
     }
