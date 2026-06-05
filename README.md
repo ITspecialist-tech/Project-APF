@@ -70,6 +70,7 @@ Update `src/content/site.json` — `team`, `patrons`, and `contact` sections.
 3. Framework preset: **Next.js** (auto-detected).
 4. Add environment variable: `NEXT_PUBLIC_SITE_URL` = your Vercel URL (e.g. `https://nusrl-undertrial-cle.vercel.app`).
 5. Deploy. Enable automatic deploys on `main`.
+6. Deployment configured for apf.nusrlranchi.ac.in.
 
 ### Link from NUSRL main site
 
